@@ -36,7 +36,7 @@ def index_get():
         }
         weather_data.append(weather)
 
-    return render_template('weather.html', weather_data=weather_data)
+    return render_template('index.html', weather_data=weather_data)
 
 @app.route('/', methods=['POST'])
 def index_post():
